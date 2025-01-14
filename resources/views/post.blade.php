@@ -10,13 +10,7 @@
 <body>
 
     <article>
-        <h1>
-            <a href="/post">My first Post</a>
-        </h1>
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In incidunt velit, earum dolorem provident culpa praesentium, suscipit deserunt iste vel ducimus harum cupiditate mollitia accusantium! Rem dicta veniam voluptatibus in?
-        </p>
+        <?= $post;  ?>
     </article>
 
     <a href="/">Go Back</a>
