@@ -11,7 +11,7 @@
 
     <article>
         <h1>
-            <a href="/post">My first Post</a>
+            <a href="/posts/my-first-post">My first Post</a>
         </h1>
 
         <p>
@@ -21,7 +21,7 @@
 
     <article>
         <h1>
-            <a href="/post">My second Post</a   >
+            <a href="/posts/my-second-post">My second Post</a   >
         </h1>
 
         <p>
@@ -31,7 +31,7 @@
 
     <article>
         <h1>
-            <a href="/post">My Third Post</a>
+            <a href="/posts/my-third-post">My Third Post</a>
         </h1>
 
         <p>
