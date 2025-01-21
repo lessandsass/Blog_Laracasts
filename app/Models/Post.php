@@ -6,10 +6,10 @@ class Post
 {
     public static function find($slug)
     {
-        $path = __DIR__ . "/../resources/posts/{$slug}.html";
+        $path = resource_path("posts/{$slug}.html");
 
         if (!file_exists($path)) {
-            return redirect('/');
+            abort(404);
         }
 
         return cache()->remember("posts.{$slug}", 3600, function () use ($path) {
