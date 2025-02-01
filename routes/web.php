@@ -9,8 +9,9 @@ Route::get('/', function () {
 
     $posts = collect(File::files(resource_path("posts/")))
         ->map(function ($file) {
-            $document = YamlFrontMatter::parseFile($file);
-
+            return YamlFrontMatter::parseFile($file);
+        })
+        ->map(function ($document) {
             return new Post (
                 $document->title,
                 $document->excerpt,
