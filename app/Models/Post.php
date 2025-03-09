@@ -48,7 +48,7 @@ class Post
 
     public static function findOrFail($slug)
     {
-        $post = static::find('slug', $slug);
+        $post = static::find($slug);
 
         if (!$post) {
             throw new ModelNotFoundException();
