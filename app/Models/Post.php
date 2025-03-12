@@ -11,4 +11,9 @@ class Post extends Model
         'excerpt',
         'body'
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }
